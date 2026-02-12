@@ -1,10 +1,6 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "errorPages": [
-    {
-      "status": 404,
-      "src": "/404.html"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/404.html" }
   ]
 }
