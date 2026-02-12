@@ -3,9 +3,13 @@ publish.py
 build_nav.py
 mkdocs_base.yml
 mkdocs.yml
+deploy_site.bat
+
+# StatiCrypt metadata
+.staticrypt.json
 
 # Keep the generated site folder out (you'll upload this manually or via a different branch)
-site/
+# site/
 
 # Python environment (This is usually where the 10k files are!)
 venv/
