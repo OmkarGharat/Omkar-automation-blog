@@ -189,7 +189,7 @@ def main():
     print("SUCCESS!")
     print("="*60)
     print("Your encrypted site is ready in the 'site/' folder.")
-    print("Run deploy_site.bat to push it to GitHub/Vercel.")
+    print("Build completed. Deployment will be handled by the main deploy script.")
     print("="*60)
 
 
