@@ -1,3 +1,7 @@
+---
+title: About me
+---
+
 # Omkar Gharat
 
 A highly dedicated **Software Test Engineer** with extensive experience in the **ERP and Insurance domains**. Proficient in **Manual Testing, API Testing (Postman), and Automation Testing (Selenium, TestNG)**, I maintain a strong emphasis on quality assurance and defect prevention.

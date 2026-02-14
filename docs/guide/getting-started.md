@@ -33,3 +33,13 @@ Always run venv/scripts/activate to activate virtual env first and then run othe
 - `mkdocs -h` - Print help message and exit.
 - ` mkdocs serve` - Start the server.
 - `mkdocs serve --livereload` -- Recommended for development.
+
+# For Local Build
+
+To run python file like build_nav.py run it as python build_nav.py
+
+then mkdocs build --clean
+
+then mkdocs serve -f mkdocs_base.yml
+
+---

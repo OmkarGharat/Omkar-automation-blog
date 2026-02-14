@@ -2,13 +2,9 @@
 title: Home
 ---
 
-# THIS SHOULD DEFINITELY APPEAR IN BUILD 12345
+# Welcome to MkDocs
 
-<!-- # Welcome to MkDocs -->
-
-## TEST DEPLOY 999
-
-For full 655 documentation visit [mkdocs.org](https://www.mkdocs.org).
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 

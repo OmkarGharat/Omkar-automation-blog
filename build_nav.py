@@ -8,6 +8,7 @@ import os
 import yaml
 from pathlib import Path
 
+exclude_files = ['404.md']
 
 def scan_docs_folder(docs_path="docs"):
     """
@@ -38,7 +39,7 @@ def scan_docs_folder(docs_path="docs"):
             
             relative_path = entry.relative_to(relative_to)
             
-            if entry.is_file() and entry.suffix == '.md' and entry.name.lower() != '404.md':    
+            if entry.is_file() and entry.suffix == '.md' and entry.name not in exclude_files:
                 # For markdown files, create a nav entry
                 # Use filename without extension as the title
                 title = entry.stem.replace('_', ' ').replace('-', ' ').title()
