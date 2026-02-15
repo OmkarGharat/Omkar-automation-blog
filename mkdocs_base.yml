@@ -9,67 +9,66 @@ theme:
     text: Inter
     code: JetBrains Mono
   palette:
-  - scheme: slate
-    primary: green
-    accent: green
-    toggle:
-      icon: material/pine-tree
-      name: Switch to Deep Space
-  - scheme: slate
-    primary: deep purple
-    accent: deep purple
-    toggle:
-      icon: material/brightness-4
-      name: Switch to Ocean Night
-  - scheme: slate
-    primary: blue
-    accent: blue
-    toggle:
-      icon: material/water
-      name: Switch to Forest
+    - scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/pine-tree
+        name: Switch to Deep Space
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to Ocean Night
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/water
+        name: Switch to Forest
   features:
-  - navigation.path
-  - navigation.instant
-  - navigation.instant.prefetch
-  - navigation.instant.progress
-  - navigation.tabs
-  - navigation.tabs.sticky
-  - navigation.top
-  - navigation.prune
-  - navigation.footer
-  - content.code.annotate
-  - search.suggest
-  - search.highlight
-  - content.code.copy
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.prune
+    - navigation.footer
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
 extra_css:
-- stylesheets/extra.css
+  - stylesheets/extra.css
 markdown_extensions:
-- pymdownx.highlight:
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: true
-    linenums: true
-- attr_list
-- md_in_html
-- pymdownx.superfences
-- pymdownx.inlinehilite
-- pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      linenums: true
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 plugins:
-- search
-- macros
-- toggle-sidebar:
-    toggle_button: navigation
+  - search
+  - macros
+  - toggle-sidebar:
+      toggle_button: navigation
 extra:
   generator: false
 nav:
-- '404': 404.md
-- About: about.md
-- Home: index.md
-- Guide:
-  - Installation: guide/installation.md
-  - Introduction: guide/introduction.md
-- Projects:
-  - Project1: projects/project1.md
-  - Project2: projects/project2.md
-  - Project3: projects/project3.md
-  - Project4: projects/project4.md
+  - About: about.md
+  - Home: index.md
+  - Guide:
+      - Installation: guide/getting-started.md
+      - Introduction: guide/introduction.md
+  - Projects:
+      - Project1: projects/project1.md
+      - Project2: projects/project2.md
+      - Project3: projects/project3.md
+      - Project4: projects/project4.md
