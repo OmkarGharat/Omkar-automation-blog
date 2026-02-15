@@ -1,5 +1,5 @@
 {
-  "installCommand": "echo 'Dependencies handled by GitHub Actions'",
-  "buildCommand": "echo 'Build handled by GitHub Actions'",
-  "outputDirectory": "site"
+  "installCommand": "echo 'Skip'",
+  "buildCommand": "echo 'Skip'",
+  "outputDirectory": "."
 }
