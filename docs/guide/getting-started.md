@@ -4,26 +4,24 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 # Installation
 
-0. Create a folder for the project
-1. create a virtual environment
-2. in that virtual env, run these commands
+1. Create a new folder for the project
+2. run these commands
 
 ```
 pip install mkdocs-material
 pip install "mkdocs-material[imaging]"
 pip install mkdocs-macros-plugin
+pip install watchdog
+pip install mkdocs-toggle-sidebar-plugin
+pip install pymdown-extensions
+pip install pyyaml
 
 then mkdocs new .
 
 then mkdocs serve (to run the code on local machine)
 
 mkdocs serve --livereload (to run the code on local machine with live reloading)
-
 ```
-
-!!! note
-
-Always run venv/scripts/activate to activate virtual env first and then run other things.
 
 ## Commands
 
@@ -40,6 +38,6 @@ To run python file like build_nav.py run it as python build_nav.py
 
 then mkdocs build --clean
 
-then mkdocs serve -f mkdocs_base.yml
+then mkdocs serve
 
 ---

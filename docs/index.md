@@ -2,9 +2,7 @@
 title: Home
 ---
 
-<!-- # Welcome to MkDocs -->
-
-# Testing Github Actions - Round 14
+# Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
