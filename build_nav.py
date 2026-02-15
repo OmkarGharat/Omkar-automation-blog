@@ -34,20 +34,27 @@ def scan_docs_folder(docs_path="docs"):
     return build_nav_recursive(docs_dir)
 
 def update_mkdocs_base_yml(nav_structure):
-    # This MERGES your master config with the new navigation
+    """
+    Reads a clean mkdocs.yml, adds fresh navigation, 
+    and saves the result to mkdocs_base.yml.
+    """
     base_file = Path("mkdocs.yml")
     output_file = Path("mkdocs_base.yml")
     
-    if base_file.exists():
-        with open(base_file, 'r', encoding='utf-8') as f:
-            config = yaml.safe_load(f) or {}
-    else:
+    if not base_file.exists():
+        print("ERROR: mkdocs.yml (template) not found!")
         return False
+        
+    with open(base_file, 'r', encoding='utf-8') as f:
+        config = yaml.safe_load(f) or {}
 
-    config['nav'] = nav_structure # Inject Nav
+    # This line replaces any existing 'nav' with the fresh scan
+    config['nav'] = nav_structure 
     
     with open(output_file, 'w', encoding='utf-8') as f:
         yaml.dump(config, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+    
+    print(f"Successfully created {output_file} with fresh navigation.")
     return True
 
 if __name__ == "__main__":
