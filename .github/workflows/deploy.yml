@@ -37,11 +37,11 @@ jobs:
         env:
           SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }} # optional
 
-      - name: Deploy to Vercel
+      - name: Deploy to Vercel (prebuilt)
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.ORG_ID }}
           vercel-project-id: ${{ secrets.PROJECT_ID }}
-          vercel-args: "--prod"
+          vercel-args: "--prod --prebuilt"
           working-directory: ./site
